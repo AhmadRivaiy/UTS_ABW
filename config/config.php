@@ -2,8 +2,8 @@
 
 //koneksi ke database akademik
 $server = "localhost";
-$user = "root";
-$pass = "J4bar2021";
+$user = "isi-username-db-anda";
+$pass = "isi-password-db-anda";
 $dbname = "perpustakaan";
 
 $koneksi = mysqli_connect($server,$user,$pass,$dbname);

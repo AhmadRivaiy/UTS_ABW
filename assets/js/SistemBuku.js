@@ -37,7 +37,7 @@ $(document).ready(function () {
         });
     });
 
-    //edit data mahasiswa
+    //edit data buku
     $("#contentData").on("submit", "#formEdit", function (e) {
         e.preventDefault();
         $.ajax({
@@ -54,7 +54,7 @@ $(document).ready(function () {
         });
     });
 
-    //hapus data mahasiswa berdasarkan IdMhsw
+    //hapus data buku berdasarkan kode_buku
     $("#contentData").on("click", "#DeleteButton", function () {
         var kodeBuku = $(this).attr("value");
         $.ajax({

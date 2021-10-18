@@ -10,7 +10,7 @@ $(document).ready(function (){
         });
     });
 
-    //Load form edit dengan parameter IdMhsw
+    //Load form edit dengan parameter id_anggota
     $("#contentDataAnggota").on("click", "#editButton", function () {
         var idAnggota = $(this).attr("value");
         $.ajax({
@@ -31,7 +31,7 @@ $(document).ready(function (){
     	loadTambahAnggota();
     });
 
-    //simpan data mahasiswa
+    //simpan data anggota
     $("#contentTambahAnggota").on("submit", "#formAddAnggota", function (e) {
         e.preventDefault();
         $.ajax({
@@ -51,7 +51,7 @@ $(document).ready(function (){
         });
     });
 
-    //edit data mahasiswa
+    //edit data anggota
     $("#contentDataAnggota").on("submit", "#formEditAnggota", function (e) {
         e.preventDefault();
         $.ajax({
@@ -67,7 +67,7 @@ $(document).ready(function (){
         });
     });
 
-    //hapus data mahasiswa berdasarkan IdMhsw
+    //hapus data anggota berdasarkan id_anggota
     $("#contentDataAnggota").on("click", "#deleteButton", function () {
         var idAnggota = $(this).attr("value");
         $.ajax({

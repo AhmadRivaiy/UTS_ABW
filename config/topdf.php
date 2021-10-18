@@ -14,6 +14,7 @@
             FROM
                 pinjam a
             JOIN buku b ON a.kode_buku = b.kode_buku
+            JOIN anggota c ON a.id_anggota = c.id_anggota
             GROUP BY b.judul, a.kode_buku
     ';
     $query2 = '
